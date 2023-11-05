@@ -3,8 +3,11 @@ https://made.uni1.de
 
 ## General Info
 Data engineering: Development stack of your choice
+
 Data exploration: Python notebook 
+
 Data analysis: Python notebook
+
 The goal of the project is to create a report that answers an interesting question based on at least two data sources
 
 ## Project Work 1
