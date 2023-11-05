@@ -18,21 +18,25 @@ Answer Google Form with a link to your repository
 (optional) Set up Python / Jayvee / Jupyter Notebook environment
 
 ## Project Work 2
-Submit project plan
-As markdown file project-plan.md in the /project directory of your repository
-Follow the example to do so 
+- Submit project plan
+  submitted in : https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/Project-Plan.md
+
 Create coarse-grained issues that layout the working packages you will work on during the semester and link them in section “Work Packages” in the project plan. This plan is allowed to be enhanced and changed over the course of the semester. Please keep it up-to-date.
-Watch and get familiar with Jayvee basics using the following resources:
-Core concepts video: 	https://www.youtube.com/watch?v=X8fOK8JIBZA
-Core concept docs: 	https://jvalue.github.io/jayvee/docs/user/core-concepts
-Tutorial examples: 	https://jvalue.github.io/jayvee/docs/category/jayvee-examples
-Prepare for Project Work 3
-Explore your chosen datasets
-What data is available? What errors are there?
-What limitations present themselves, is data missing and representative?
-What data types are relevant, do you need to research anything?
-You can use a Python notebook to load and explore your data (see the example in your repository)
-You do not need to make a submission for this part of the Project Work, it is just for you to get more familiar with your data
+
+- Watch and get familiar with Jayvee basics using the following resources:
+- Core concepts video: 	https://www.youtube.com/watch?v=X8fOK8JIBZA
+- Core concept docs: 	https://jvalue.github.io/jayvee/docs/user/core-concepts
+- Tutorial examples: 	https://jvalue.github.io/jayvee/docs/category/jayvee-examples
+
+
++ Prepare for Project Work 3
+  Explore your chosen datasets
+  What data is available? What errors are there?
+  What limitations present themselves, is data missing and representative?
+  What data types are relevant, do you need to research anything?
+  You can use a Python notebook to load and explore your data (see the example in your repository)
+  You do not need to make a submission for this part of the Project Work, it is just for you to get more familiar with your data
+
 
 ## Project Work 3
 Follow your project plan to build an automated data pipeline for your project
