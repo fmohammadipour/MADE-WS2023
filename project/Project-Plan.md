@@ -21,13 +21,18 @@ The ultimate goal is to offer deeper insights into what makes nations happier, p
 
 ### Datasource1: World Happiness Report, 2005-Present according to WHR report
 * Metadata URL: https://www.kaggle.com/datasets/usamabuttar/world-happiness-report-2005-present
-* Data URL: https://raw.githubusercontent.com/od-ms/radverkehr-zaehlstellen/main/100035541/2019-01.csv
+* Data URL: https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/DataSource1/World-Happiness-Report.csv
 * Data Type: CSV
 The WHR is a publication of the Sustainable Development Solutions Network.
 
 ### Datasource2: World Happiness Report
 * Metadata URL: https://www.kaggle.com/datasets/synful/world-happiness-report
-* Data URL: https://raw.githubusercontent.com/od-ms/radverkehr-zaehlstellen/main/100035541/2019-01.csv
+* Data URLs:
+  https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/DataSource2/2015.csv
+  https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/DataSource2/2016.csv
+  https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/DataSource2/2017.csv
+  https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/DataSource2/2018.csv
+  https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/DataSource2/2019.csv
 * Data Type: CSV
 This report was published at the United Nations at an event celebrating International Day of Happiness on March 20th
 Happiness scored according to economic production, social support, etc.
