@@ -1,42 +1,40 @@
 # Project Plan
 
 ## Title
-Global Happiness Patterns: A Comparative Analysis Across Nations
+Connecting COVID-19 and Happiness: Exploring How Deaths Relate to Happiness Factors
 
 ## Main Question
 
-1. "What Factors Contribute Most Significantly to Variances in Global Happiness Scores Among Different Nations?"
+1. "Does the Impact of COVID-19 on Global Death Rates Relate to Varied Levels of Happiness Across Countries?"
 
 ## Description
+This project looks at how COVID-19 deaths might be connected to things that make people happy. We're checking if there's a link between how many people passed away due to COVID-19 in different countries and factors that contribute to happiness, like how much money people have, how healthy they are, how much support they get, how free they feel, how generous people are, and how they see corruption. We'll use numbers and math to see if there's a connection between these sad events and what makes people feel good. The aim is to understand if there's any relationship between tough times and how happy people feel around the world.
 
-This project delves into the intricate tapestry of global happiness, meticulously examining and comparing happiness metrics across diverse nations. 
-Leveraging two comprehensive datasets on worldwide happiness, the study aims to uncover the nuanced factors that significantly influence happiness scores on a global scale.
-By conducting a thorough comparative analysis, this research seeks to unravel the underlying determinants that drive variations in happiness levels among different countries. 
-Through rigorous statistical analysis and data-driven exploration, the study aims to identify and elucidate the most influential factors shaping the subjective well-being of populations worldwide.
-
-The investigation into these happiness patterns transcends mere rankings, aiming to unearth correlations and disparities, shedding light on the multifaceted aspects that contribute to the complex landscape of global happiness. 
-The ultimate goal is to offer deeper insights into what makes nations happier, potentially contributing to informed policies and interventions aimed at fostering greater well-being and contentment across diverse societies.
 
 ## Datasources
 
-### Datasource1: World Happiness Report, 2005-Present according to WHR report
-* Metadata URL: https://www.kaggle.com/datasets/usamabuttar/world-happiness-report-2005-present
-* Data URL: can be download via Kaggle API
+### Datasource1: World Happiness Report up to 2022
+* Metadata URL: https://www.kaggle.com/datasets/mathurinache/world-happiness-report
+* Data URLs: can be download via Kaggle API - only 2020 data is used in this project
 * Data Type: CSV
-The WHR is a publication of the Sustainable Development Solutions Network.
 
-### Datasource2: World Happiness Report
-* Metadata URL: https://www.kaggle.com/datasets/synful/world-happiness-report
-* Data URLs: can be download via Kaggle API - only 2019 data is used in this project
+### Datasource2: Novel Coronavirus (COVID-19) Cases Data
+* Metadata URL: https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases?
+* Data URL: https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv
 * Data Type: CSV
-This report was published at the United Nations at an event celebrating International Day of Happiness on March 20th
-Happiness scored according to economic production, social support, etc.
+
+
 
 ## Work Packages
 
-<!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
+1. Data Collection [#1][i1]
+2. Data Cleaning [#2][i2]
+3. Data Analyse [#3][i3]
+4. Data Interpretation [#4][i4]
+5. Final Report [#5][i5]
 
-1. ....
-2. ...
-
-[i1]:
+[i1]: https://github.com/fmohammadipour/MADE-WS2023/issues/1
+[i2]: https://github.com/fmohammadipour/MADE-WS2023/issues/2
+[i3]: https://github.com/fmohammadipour/MADE-WS2023/issues/3
+[i4]: https://github.com/fmohammadipour/MADE-WS2023/issues/4
+[i5]: https://github.com/fmohammadipour/MADE-WS2023/issues/5
