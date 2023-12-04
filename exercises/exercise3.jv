@@ -1,0 +1,97 @@
+
+pipeline CarsPipeline {
+
+    CarsExtractor
+        ->TextFileInterpreter
+        ->CarsCSVInterpreter
+        ->CarsRowDeleter
+        ->CarsColumnDeleter
+        ->CarsTableInterpreter
+        ->CarsLoader;
+    
+    // Direct download link
+    block CarsExtractor oftype HttpExtractor {
+        url: "https://www-genesis.destatis.de/genesis/downloads/00/tables/46251-0021_00.csv";
+    }
+    
+    // Pick suitable encoding
+    // Make sure to preserve the german special letters like “ü” or “ä”
+
+    block TextFileInterpreter oftype TextFileInterpreter{
+        encoding: "ASCII";
+    }
+
+    // Block for interpreting the CSV file format
+    block CarsCSVInterpreter oftype CSVInterpreter {
+        delimiter: ";";
+	}
+
+    // Ignore the first 6 lines and last 4 lines as metadata
+    block CarsRowDeleter oftype RowDeleter {
+        delete: 
+        [row 1, row 2, row 3, row 4, row 5, row 6, row 484, row 485, row 487];  // Delete rows 1 to 6 and 484 to 487
+    }
+
+
+    // Keep only the following columns, rename them to the new name given here
+    block CarsColumnDeleter oftype ColumnDeleter {
+		delete: 
+        [column D, column E, column F, column G, column H, column I, column J, 
+        column K, column L, column N, column O, column P, column Q, column R, column S, column T, 
+        column U, column V, column X, column Y, column Z, column AA, column AB, column AC, column AD, 
+        column AE, column AF, column AH, column AI, column AJ, column AK, column AL, column AM, 
+        column AN, column AO, column AP, column AR, column AS, column AT, column AU, column AV, 
+        column AW, column AX, column AY, column AZ, column BB, column BC, column BD, column BE, 
+        column BF, column BG, column BH, column BI, column BJ, column BL, column BM, column BN, 
+        column BO, column BP, column BQ, column BR, column BS, column BT, column BV, column BW, 
+        column BX, column BY, column BZ, column CA, column CB, column CC, column CD, column CE];     }
+
+    //all other columns should be positive integers > 0
+    valuetype positiveNoFormat oftype integer {
+        constraints: [
+            positiveNoOnly,
+        ];
+    }
+
+    constraint positiveNoOnly oftype RangeConstraint{
+        lowerBound: 0;
+    }
+    
+    // CINs are Community Identification Numbers, must be strings with 5 characters and 
+    // can have a leading 0
+
+    valuetype CIN oftype text {
+        constraints: [
+            ConstraintCIN,
+        ];
+    }
+
+    constraint ConstraintCIN oftype LengthConstraint{
+        minLength: 5;
+        maxLength: 5;
+    }
+    
+    // Use fitting SQLite types (e.g., BIGINT, TEXT or FLOAT) for all columns
+    block CarsTableInterpreter oftype TableInterpreter {
+		header: false;
+	    columns: [
+		    "date" oftype text,
+            "CIN" oftype CIN,
+            "name" oftype text,
+            "petrol" oftype positiveNoFormat,
+            "diesel" oftype positiveNoFormat,
+            "gas" oftype positiveNoFormat,
+            "electro" oftype positiveNoFormat,
+            "hybrid" oftype positiveNoFormat,
+            "plugInHybrid" oftype positiveNoFormat,
+            "others" oftype positiveNoFormat,];
+	}
+
+    // Write data into a SQLite database called “cars.sqlite”, in the table “cars”
+    block CarsLoader oftype SQLiteLoader {
+		table: "cars";
+		file: "./cars.sqlite";
+	}
+
+
+}
