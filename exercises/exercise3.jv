@@ -18,7 +18,7 @@ pipeline CarsPipeline {
     // Make sure to preserve the german special letters like “ü” or “ä”
 
     block TextFileInterpreter oftype TextFileInterpreter{
-        encoding: "utf-16";
+        //encoding: "utf-16";
     }
 
     // Block for interpreting the CSV file format
