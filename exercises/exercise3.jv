@@ -19,6 +19,7 @@ pipeline CarsPipeline {
 
     block TextFileInterpreter oftype TextFileInterpreter{
         //encoding: "utf-16";
+        encoding: "utf8";
     }
 
     // Block for interpreting the CSV file format
@@ -29,7 +30,8 @@ pipeline CarsPipeline {
     // Ignore the first 6 lines and last 4 lines as metadata
     block CarsRowDeleter oftype RowDeleter {
         delete: 
-        [row 1, row 2, row 3, row 4, row 5, row 6, row 484, row 485, row 487];  // Delete rows 1 to 6 and 484 to 487
+        [row 1, row 2, row 3, row 4, row 5, row 6, row 484, row 485, row 487];  
+        // Delete rows 1 to 6 and 484 to 487
     }
 
 
