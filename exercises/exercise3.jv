@@ -19,7 +19,7 @@ pipeline CarsPipeline {
 
     block TextFileInterpreter oftype TextFileInterpreter{
         //encoding: "utf-16";
-        encoding: "utf8";
+        encoding: "latin2";
     }
 
     // Block for interpreting the CSV file format
