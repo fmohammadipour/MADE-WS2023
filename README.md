@@ -1,9 +1,13 @@
-# Methods of Advanced Data Engineering
+# Exploring How Corona Relate to Happiness Factors Worldwide
 
-### requirements before starting
-## requirements : 
+## Porject report:
+In this link you can find a complete report about this project :
+https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/final-report.ipynb
 
-## libraries :
+## Data Exploration
+if you are interested in exploring choosen dataset you can go over this file and see some visualization on them :
+https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/data-exploration.ipynb
+
 
 
 ## Kaggle Authentication
