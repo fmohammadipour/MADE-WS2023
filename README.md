@@ -11,6 +11,7 @@ https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/data-exploration
 
 ## Presentation
 in the following link you can also see the slides presenting this project as well:
+
 https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/slides.pdf
 
 ## Kaggle Authentication
