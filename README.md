@@ -37,6 +37,11 @@ after getting it, the file should be placed in `/project/kaggle.json`
 
 ## how to use 
 
+1. Clone this git repository.
+```bash
+git clone https://github.com/fmohammadipour/MADE-WS2023.git
+```
+
 ## First step : Run requirements installation
 
 ./project/reqInstall.sh
