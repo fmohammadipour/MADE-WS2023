@@ -1,5 +1,7 @@
 # Exploring How Corona Relate to Happiness Factors Worldwide
 
+This project looks at how COVID-19 deaths might be connected to things that make people happy. We're checking if there's a link between how many people passed away due to COVID-19 in different countries and factors that contribute to happiness, like how much money people have, how healthy they are, how much support they get, how free they feel, how generous people are, and how they see corruption. We'll use numbers and math to see if there's a connection between these sad events and what makes people feel good. The aim is to understand if there's any relationship between tough times and how happy people feel around the world.
+
 ## Porject report:
 In this link you can find a complete report about this project :
 
