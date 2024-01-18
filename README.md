@@ -9,7 +9,9 @@ https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/final-report.ipy
 if you are interested in exploring choosen dataset you can go over this file and see some visualization on them :
 https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/data-exploration.ipynb
 
-
+## Presentation
+in the following link you can also see the slides presenting this project as well:
+https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/slides.pdf
 
 ## Kaggle Authentication
 In this project one of the datasets in provided by kaggle. For downloading and use it in this project, we need to use their authentication system which includes a kaggle.json file. 
