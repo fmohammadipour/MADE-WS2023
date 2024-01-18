@@ -7,6 +7,7 @@ https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/final-report.ipy
 
 ## Data Exploration
 if you are interested in exploring choosen dataset you can go over this file and see some visualization on them :
+
 https://github.com/fmohammadipour/MADE-WS2023/blob/main/project/data-exploration.ipynb
 
 ## Presentation
